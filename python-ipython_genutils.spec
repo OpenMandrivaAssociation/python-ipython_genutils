@@ -33,7 +33,7 @@ IPython/Jupyter should depend on it.
 %prep
 %setup -q -n %{srcname}-%{srcversion}
 
-%apply_patches
+%autopatch -p1
 
 cp -a . %py2dir
 
