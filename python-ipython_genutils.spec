@@ -38,7 +38,7 @@ away.
 
 
 %prep
-%setup -q -n %{srcname}-%{srcversion}
+%setup -q -n %{srcname}-%{version}
 
 %autopatch -p1
 
