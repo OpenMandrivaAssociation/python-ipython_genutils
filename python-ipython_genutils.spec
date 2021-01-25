@@ -1,14 +1,13 @@
 %global srcname ipython_genutils
-%global srcversion 0.1.0
 
 Name:           python-%srcname
-Version:        0.1.0
+Version:        0.2.0
 Release:        1
 Summary:        A micro-framework for Python based on Werkzeug, Jinja 2 and good intentions
 Group:          Development/Python
 License:        BSD
 URL:            http://github.com/ipython/%srcname
-Source0:        http://pypi.python.org/packages/source/i/%srcname/%{srcname}-%{srcversion}.tar.gz
+Source0:        http://pypi.python.org/packages/source/i/%srcname/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:	graphviz
@@ -29,6 +28,14 @@ No functionality should be added to this repository, and no packages outside
 IPython/Jupyter should depend on it.
 
 %package -n python2-%srcname
+Summary:        A micro-framework for Python based on Werkzeug, Jinja 2 and good intentions
+
+%description -n python2-%srcname
+This package is a stop-gap that contains some common utilities shared by
+Jupyter and IPython projects during The Big Split™. As soon as possible,
+those packages will remove their dependency on this, and this repo will go
+away.
+
 
 %prep
 %setup -q -n %{srcname}-%{srcversion}
