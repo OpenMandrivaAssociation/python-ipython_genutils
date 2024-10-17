@@ -6,7 +6,7 @@ Release:        2
 Summary:        A micro-framework for Python based on Werkzeug, Jinja 2 and good intentions
 Group:          Development/Python
 License:        BSD
-URL:            http://github.com/ipython/%srcname
+URL:            https://github.com/ipython/%srcname
 Source0:        http://pypi.python.org/packages/source/i/%srcname/%{srcname}-%{version}.tar.gz
 BuildArch:      noarch
 
